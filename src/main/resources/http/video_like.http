@@ -1,0 +1,19 @@
+###LIKE
+POST http://localhost:8080/api/v1/video/like/public
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc5Nzc1NDksImV4cCI6MTY1Nzk4MTE0OSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjJ9.alg60MZsHmx4XraqFooWCeMr07I3fjp9hWMuZ3NXayA
+Content-Type: application/json
+
+{
+  "videoId": "402880ec81e89f590181e89fe9cc0001"
+}
+
+
+###get user video like list
+GET http://localhost:8080/api/v1/video/like/public/list
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgwNjYzODEsImV4cCI6MTY1ODA2OTk4MSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjJ9.oezfIWsLTx2NgXaXtRDrrxPJTJr_3rhuuSSnnTR-ttk
+
+
+
+###list fro admin
+GET http://localhost:8080/api/v1/video/like/adm/list?p=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgwNjY4MjIsImV4cCI6MTY1ODA3MDQyMiwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.MqruDXbeTI5_Yxh74uXgJBofHC2y2FJWT3UKOyYu034

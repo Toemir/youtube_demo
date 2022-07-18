@@ -1,0 +1,23 @@
+POST http://localhost:8080/api/v1/playlist/video/public/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc0NjU4ODQsImV4cCI6MTY1NzQ2OTQ4NCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.HQ7vIJV8AKMa0w1nF25esvWDimZgQKRCw1tmn9v2zpA
+Content-Type: application/json
+
+{
+  "videoId": "402880ec81e89f590181e89fe9cc0001",
+  "playlistId": "402880ec81e8a9f60181e8aeb4570000",
+  "order": 1
+}
+
+###update
+PUT http://localhost:8080/api/v1/playlist/video/public/update
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2MzQ2MDYsImV4cCI6MTY1NzYzODIwNiwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.rCgBxf7v3a0Emn6zTq_mIlDHa0fXjbNzJ12iTNswkfE
+Content-Type: application/json
+
+{
+  "videoId": "402880ec81e8d8220181e8d89dff0000",
+  "playlistId": "402880ec81e8b0550181e8b124bb0000",
+  "order": 2
+}
+###list by playlist
+GET http://localhost:8080/api/v1/playlist/video/public/playlist?list=402880ec81e8b0550181e8b124bb0000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2Mzg0MjcsImV4cCI6MTY1NzY0MjAyNywiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.Nv1eKygrwPqpHV1VhIT1gFcWhswRdP8QJPf4DVluoB4

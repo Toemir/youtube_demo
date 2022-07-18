@@ -1,0 +1,22 @@
+POST http://localhost:8080/api/v1/video/tag/public/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2NDAwNTQsImV4cCI6MTY1NzY0MzY1NCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.mPWd_LhxhX-2ib2ZA-umL0JRV1dQy4F3pKFV-6qG0eQ
+Content-Type: application/json
+
+{
+  "videoId": "402880ec81e89f590181e89fe9cc0001",
+  "tagId": 2
+}
+
+###delete
+DELETE http://localhost:8080/api/v1/video/tag/public/delete
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2NDAwNTQsImV4cCI6MTY1NzY0MzY1NCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.mPWd_LhxhX-2ib2ZA-umL0JRV1dQy4F3pKFV-6qG0eQ
+Content-Type: application/json
+
+{
+  "videoId": "402880ec81e89f590181e89fe9cc0001",
+  "tagId": 2
+}
+
+###list
+GET http://localhost:8080/api/v1/video/tag/public/list?v=402880ec81e89f590181e89fe9cc0001
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2NDAwNTQsImV4cCI6MTY1NzY0MzY1NCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.mPWd_LhxhX-2ib2ZA-umL0JRV1dQy4F3pKFV-6qG0eQ

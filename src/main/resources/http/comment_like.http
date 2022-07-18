@@ -1,0 +1,16 @@
+POST http://localhost:8080/api/v1/comment/like/public
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgwNjk4MTUsImV4cCI6MTY1ODA3MzQxNSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjJ9.XSO-R2RvuBuqp-Jst5LpXBP7Pi8nefcWhhkruWFxBbw
+Content-Type: application/json
+
+{
+  "commentId": 1,
+  "profileId": 2
+}
+
+###get list
+GET http://localhost:8080/api/v1/comment/like/public/list
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgwNjk4MTUsImV4cCI6MTY1ODA3MzQxNSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjJ9.XSO-R2RvuBuqp-Jst5LpXBP7Pi8nefcWhhkruWFxBbw
+
+###get list for admin
+GET http://localhost:8080/api/v1/comment/like/adm/list?p=2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgwNjk5OTUsImV4cCI6MTY1ODA3MzU5NSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.UB0MyOgywIJN0dCiCZ5Sq5sXNkxScyGv-7GM3iNcHyE

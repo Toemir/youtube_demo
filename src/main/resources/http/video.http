@@ -1,0 +1,43 @@
+POST http://localhost:8080/api/v1/video/public/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2MTQzNTcsImV4cCI6MTY1NzYxNzk1NywiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.nY453Q55GHL2zssUBq9jcR7GLlSS2Qek02NI7sec4rw
+Content-Type: application/json
+
+{
+  "name": "video 5",
+  "description": "video 5 desc",
+  "attachId": "003aabca-74e9-4383-9e26-d00351d330d7",
+  "previewId": "d86574fc-59ed-40ce-bb22-27ace82b7b73",
+  "channelId": "402880ec81e966bc0181e96868430000",
+  "playlistId": "402880ec81e8a9f60181e8aeb4570000",
+  "categoryId": 3,
+  "order": 5
+}
+
+###update
+
+
+###change status
+
+###increase view count
+
+###pagination by category id
+GET http://localhost:8080/api/v1/video/public/pagination_by_category/3?size=5&page=0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2MTQzNTcsImV4cCI6MTY1NzYxNzk1NywiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.nY453Q55GHL2zssUBq9jcR7GLlSS2Qek02NI7sec4rw
+
+###get by name
+GET http://localhost:8080/api/v1/video/public/get_by_name?name=video
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4NTgwNjcsImV4cCI6MTY1Nzg2MTY2NywiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.nCtQITbIBSJ5qi_FfKx7QZdgMMXLScsQ4C71nqOwvZw
+
+###get by category with pagination
+GET http://localhost:8080/api/v1/video/public/pagination/category?c=3?size=10&page=0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4MTgwNTAsImV4cCI6MTY1NzgyMTY1MCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.VVG4pJP4-FQ19EVViqIgnveQfWPMpr3QEPo_381AE1A
+
+###get BY id
+GET http://localhost:8080/api/v1/video/public/402880ec81e89f590181e89fe9cc0001
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgxMTc2NTEsImV4cCI6MTY1ODEyMTI1MSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.qn8NR-M76YLTGtCTsq-tzoynUzsnGdaU3Q3we_0nuXk
+
+###get channel video list with pagination
+GET http://localhost:8080/api/v1/video/public/channel?c=402880ec81e86be10181e86c16ae0000&size=5&page=0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4MTgwNTAsImV4cCI6MTY1NzgyMTY1MCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.VVG4pJP4-FQ19EVViqIgnveQfWPMpr3QEPo_381AE1A
+
+

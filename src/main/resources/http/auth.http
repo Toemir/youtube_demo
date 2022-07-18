@@ -1,0 +1,30 @@
+POST http://localhost:8080/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "username": "toemir",
+  "password": "1337",
+  "email": "kurbanovmirkamol1337@gmail.com"
+}
+
+###ADMIN
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "kurbanovmirkamol1337@gmail.com",
+  "password": "1337"
+}
+###USER
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "kallaaa",
+  "password": "kalla"
+}
+
+###
+
+
+

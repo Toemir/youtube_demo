@@ -1,0 +1,21 @@
+###Create
+POST http://localhost:8080/api/v1/subscription/public/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc5NzMwMDEsImV4cCI6MTY1Nzk3NjYwMSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjJ9.a4NGE0DM5phq_bBvQN5lLE18VZHtznn6emK0-4dSPho
+Content-Type: application/json
+
+{
+  "channelId": "402880ec81e966bc0181e96868430000",
+  "type": "ALL"
+}
+
+###update status
+
+###update status
+
+###list by profile id fro users
+GET http://localhost:8080/api/v1/subscription/public/list?p=2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc5NzMwMDEsImV4cCI6MTY1Nzk3NjYwMSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjJ9.a4NGE0DM5phq_bBvQN5lLE18VZHtznn6emK0-4dSPho
+
+###list by profile id fro admins
+GET http://localhost:8080/api/v1/subscription/adm/list?p=2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc5NzQ3MjEsImV4cCI6MTY1Nzk3ODMyMSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.QmLEgyamZnUBx-NZwSKAkz8ymkmJ02wd8JPRr3VNWDA

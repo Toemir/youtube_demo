@@ -1,0 +1,19 @@
+POST http://localhost:8080/api/v1/report/public
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgwNzc0ODgsImV4cCI6MTY1ODA4MTA4OCwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjJ9.Lo19ps-FVOtCrtaIPWKkcLQM21X1hd0MBYjTQuRzmZw
+Content-Type: application/json
+
+{
+  "entityId":"402880ec81e86be10181e86c16ae0000",
+  "type": "CHANNEL",
+  "content": "GAVNO KANAL",
+  "profileId": 2
+}
+
+
+###pagination
+GET http://localhost:8080/api/v1/report/adm/pagination?size=2&page=0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgwNzc4ODEsImV4cCI6MTY1ODA4MTQ4MSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.P6n5bVdvzYKJpjq2G-Zlns6zwbbpdufN3ix8jB_hgkQ
+
+###find list by user id
+GET http://localhost:8080/api/v1/report/adm/list?p=2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgwNzc4ODEsImV4cCI6MTY1ODA4MTQ4MSwiaXNzIjoiWW91dHViZSBwcm9qZWN0IiwiaWQiOjF9.P6n5bVdvzYKJpjq2G-Zlns6zwbbpdufN3ix8jB_hgkQ
